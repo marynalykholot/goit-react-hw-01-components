@@ -1,16 +1,10 @@
-import css from "./Profile.module.css";
+import css from './Profile.module.css';
 import PropTypes from 'prop-types';
-
-
 
 export const Profile = ({ avatar, username, tag, location, stats }) => (
   <div className={css.profile}>
     <div className={css.description}>
-      <img
-        src={avatar}
-        alt="User avatar"
-        className={css.avatar}
-      />
+      <img src={avatar} alt="User avatar" className={css.avatar} />
       <p className={css.name}>{username}</p>
       <p className={css.tag}>{tag}</p>
       <p className={css.location}>{location}</p>
@@ -32,8 +26,6 @@ export const Profile = ({ avatar, username, tag, location, stats }) => (
     </ul>
   </div>
 );
-
-
 
 Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
