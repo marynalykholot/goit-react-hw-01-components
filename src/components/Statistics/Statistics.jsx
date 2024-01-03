@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
-import getRandomHexColor from './GetRandomHexColor';
+import getRandomHexColor from 'helpers/getRandomHexColor';
 
 const Statistics = ({ title, stats }) => (
   <div className={css.statisticsContainer}>
